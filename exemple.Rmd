@@ -1,0 +1,55 @@
+---
+title: "Exemples pour ggipp"
+output: pdf_document
+---
+
+
+```{r echo = F}
+library(dplyr)
+library(ggplot2)
+library(ggipp)
+
+df <- (
+  expand.grid(id = 1:10, t = 1:100)
+  %>% mutate(
+    x = rnorm(n = n()) * sin(t**2),
+    y = rnorm(n = n()) * cos(t**2),
+    z = sample(1:10, n(), replace = T)
+    )
+  )
+
+```
+
+Test du thème et de l'échelle de couleurs :
+
+```{r}
+(
+  ggplot(df)
+  + aes(
+    x = x,
+    y = y,
+    colour = z
+    )
+  + geom_point()
+  + theme_ipp()
+  + scale_color_ipp(palette = 'complete', discrete = F)
+)
+
+```
+
+Test du thème et de l'échelle de remplissage :
+
+```{r}
+
+(
+  ggplot(df)
+  + aes(
+    x = y,
+    fill = factor(z)
+  )
+  + geom_histogram(bins = 20)
+  + theme_ipp()
+  + scale_fill_ipp(palette = 'froide', discrete = T)
+)
+
+```
