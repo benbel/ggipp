@@ -1,3 +1,6 @@
+#' Renvoie une palette
+#' 
+#' @return  Un thème ggplot2
 #' @importFrom ggplot2 %+replace%
 theme_ipp <- function () {
   (

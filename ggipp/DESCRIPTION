@@ -13,4 +13,4 @@ LazyData: true
 Imports:
     ggplot2,
     dichromat
-
+RoxygenNote: 7.1.0

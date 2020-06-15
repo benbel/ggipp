@@ -7,7 +7,12 @@ definitions_couleurs_ipp <- c(
   `mauve`      = "#805A73"
 )
 
-
+#' Renvoie le nom et le code hexadécimal des couleurs ipp.
+#' 
+#' @param ... une str ou un intérable de str
+#' @return Une liste str:str list de noms de couleurs et de codes hexadécimaux
+#' @examples
+#' couleurs_ipp['bleu_fonce']
 couleurs_ipp <- function(...) {
   couleurs <- c(...)
 
