@@ -6,7 +6,7 @@ Author: Benjamin Belrhomari
 Maintainer: Benjamin Belrhomari <benjamin.belrhomari@ipp.eu>
 Description: ggipp provides a theme, a color scale and a fill scale for
     use with the ggplot2 package that are consistent with the IPP
-    graphic charter. 
+    graphic charter. Based on Simon Jackson's code.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
