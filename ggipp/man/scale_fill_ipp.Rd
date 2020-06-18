@@ -9,7 +9,9 @@ scale_fill_ipp(palette = "principale", discrete = TRUE, reverse = FALSE, ...)
 \arguments{
 \item{palette}{Nom de la palette définie dans definition_palettes_ipp}
 
-\item{reverse}{Booléen pour rendre l'échelle discrète ou continue}
+\item{discrete}{Booléen pour rendre l'échelle discrète ou continue}
+
+\item{reverse}{Booléen pour inverser l'ordre des couleurs}
 
 \item{...}{Paramètres passés à ggplot2::scale_color_gradientn ou ggplot2::discrete_scale}
 }
