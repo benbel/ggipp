@@ -11,6 +11,9 @@ definitions_couleurs_ipp <- c(
 #'
 #' @param ... une str ou un intérable de str
 #' @return Une liste str:str list de noms de couleurs et de codes hexadécimaux
+#' @examples
+#' couleurs_ipp('bleu_fonce')
+#' @export
 couleurs_ipp <- function(...) {
   couleurs <- c(...)
 

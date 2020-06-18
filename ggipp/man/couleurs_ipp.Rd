@@ -15,3 +15,6 @@ Une liste str:str list de noms de couleurs et de codes hexadécimaux
 \description{
 Renvoie le nom et le code hexadécimal des couleurs ipp.
 }
+\examples{
+couleurs_ipp('bleu_fonce')
+}

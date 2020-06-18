@@ -5,6 +5,7 @@
 #' @param discrete Booléen pour rendre l'échelle discrète ou continue
 #' @param ... Paramètres passés à ggplot2::scale_color_gradientn ou ggplot2::discrete_scale
 #' @return Une échelle de couleur pour ggplot2
+#' @export
 scale_color_ipp <- function(palette = "principale", discrete = TRUE, reverse = FALSE, ...) {
   pal <- palette_ipp(palette = palette, reverse = reverse)
 
@@ -22,6 +23,7 @@ scale_color_ipp <- function(palette = "principale", discrete = TRUE, reverse = F
 #' @param discrete Booléen pour rendre l'échelle discrète ou continue
 #' @param ... Paramètres passés à ggplot2::scale_color_gradientn ou ggplot2::discrete_scale
 #' @return Une échelle de remplissage pour ggplot2
+#' @export
 scale_fill_ipp <- function(palette = "principale", discrete = TRUE, reverse = FALSE, ...) {
   pal <- palette_ipp(palette = palette, reverse = reverse)
 

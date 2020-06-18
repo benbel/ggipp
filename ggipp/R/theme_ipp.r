@@ -1,7 +1,8 @@
 #' Renvoie une palette
-#' 
+#'
 #' @return  Un thème ggplot2
 #' @importFrom ggplot2 %+replace%
+#' @export
 theme_ipp <- function () {
   (
     ggplot2::theme_minimal()
