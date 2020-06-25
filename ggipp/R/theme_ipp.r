@@ -1,4 +1,4 @@
-#' Renvoie une palette
+#' Renvoie un thème ggplot2
 #'
 #' @return  Un thème ggplot2
 #' @importFrom ggplot2 %+replace%
